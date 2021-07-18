@@ -29,7 +29,7 @@ h1 {
     flex-direction: column;
     width: 90vw;
     height: 50vh;
-    background-color: rgb(151, 9, 9);
+    background: url('./img/armas.jpg');
     border-radius: 5px;
     max-width: 400px;
 }
