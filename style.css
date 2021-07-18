@@ -29,8 +29,9 @@ h1 {
     flex-direction: column;
     width: 90vw;
     height: 50vh;
-    background: url('./img/armas.jpg');
+    background: url('./img/armas.png');
     background-position: cover;
+    background-size: cover;
     border-radius: 5px;
     max-width: 400px;
 }
