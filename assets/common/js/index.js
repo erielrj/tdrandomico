@@ -1,4 +1,4 @@
-let itens = (`2 elites Re-role o Dado
+let allTablesResult = (`2 elites Re-role o Dado
 N.I
 Caçador - Local com sangue e carne e ossos
 Comedora de miolos - casa com rastros de sangue e cabeças humanas em locais diversos espalhados na casa
@@ -97,73 +97,18 @@ Munição ponto 50 1d6x2
 Sniper ponto 50
 Arcenal de armas e munições e explosivos 1 item de cada da lista`).split('\n');
 
-function randomizar(){
-    let res = document.querySelector('#resultado');
-    numeroaleatorio = Math.round((Math.random() * 98));
-    res.innerHTML = itens[numeroaleatorio];
+let allTablesName = ['Tabela de Elites', 'Tabela de Itens', 'Tabela de Armas'];
+
+
+const indexTables = {
+    allTablesResult,
+    allTablesName
 }
 
 
+function randomizar(dice, tableName){
 
+    randomNumber = Math.floor(Math.random() * (indexTables[tableName].length));
+    dice.parentElement.children[1].textContent = indexTables[tableName][randomNumber];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-let elites = `
-2 elites Re-role o Dado
-N.I
-N.I
-Caçador - Local com sangue e carne e ossos
-N.I
-Comedora de miolos - casa com rastros de sangue e cabeças humanas em locais diversos espalhados na casa
-Nada
-Bebemorf - Zumbis de barriga inchada. outros com a barriga aberta
-Foice Humana - Corpos fatiados espalhados pelo local
-Engocorp - Casa com uma mancha de sangue que leva ate o banheiro. Banheira ou Box com uma bolha enorme. Feito com tendões Humanos pele e Ossos
-Explosivo - Local com um liquido verde musgo espalhado entre corpos
-Mutak - Casa com um grande buraco na entrada. pedaços de Brinquedos e coisas que Brilham ou Refletem a luz
-N.I
-Nada
-N.I
-Begosm - Zumbis com a barrigas cheias de bolhas pulsando
-Lingua - Casa com pegadas de sangue e gotas que acompanha
-Pùdrido - Local escuro cheio de moscas. Janelas. Cortina. Portas Fechadas
-N.I
-Maria martelinho - casa com marcas de batidas e partes quebradas. corpos com cranio afundado
-Nada
-N.I
-Infeccioso - Sangue coagulado e vermes pelo chão
-Paratum - casa com muito lixo e sujeira
-N.I
-Arakna - Casa com Teias. e Cabeças penduradas e Ninho de aranhas
-N.I
-Nada
-Grito - Casa com corpos presos nas paredes e teto
-N.I
-Cães Infectados - casa com muitos ossos ruidos e sujo com liquido viscoso
-1D6 N.I
-N - Vermes gordos em cadaveres aparentemente frescos e retorcidos
-N.I
-Nada
-3 N.I
-3 Caçador Noturno
-Casa completamente escura 2d6 Criaturas ao dia. a noite Vazia 
-3 N.I
-3 Criadora
-corpos pelo chão que se levantam com o toque
-3 N.I
-3 Bocarra
-Casa com Corpos Faltando pedaços. Em cantos carne e ossos mastigados em decomposição 
-Nada
-2D6 Casa ocupada, por sobrevive ou + %
-`
+}

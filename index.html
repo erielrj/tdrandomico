@@ -4,17 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Ação Randomica</title>
+    <link rel="stylesheet" href="./assets/common/css/style.css">
+    <title>TD</title>
 </head>
 <body>
-    <div class="box">
-        <div class="resultado">
-            <h1 id="resultado"></h1>
-        </div>
-        <button onClick="randomizar()">Aleatório</button>
-    </div>
+    
+<header>
+    <button onclick="openMenu()">&#9776</button>
+    <h1>TABELAS GERAIS</h1>
+</header>
 
-    <script src="main.js"></script>
+<div class="container">
+
+    <aside>
+        <a class="close" href="javascript:void(0);" onclick="closeMenu()">&times;</a>
+        <ul>
+            <li><a class="active" href="index.html">TABELAS GERAIS</a></li>
+            <li><a href="#">ARMAS E OBJETOS</a></li>
+            <li><a href="#">INIMIGOS</a></li>
+            <li><a href="#">EVENTOS</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <section>
+            <h1>TABELA GERAL</h1>
+            <p></p>
+            <img onclick="randomizar(this, 'allTablesResult');" src="./assets/common/images/icons/dices.png" alt="" srcset="">
+        </section>
+        
+        <section>
+            <h1>TABELA ALEATÓRIA</h1>
+            <p></p>
+            <img onclick="randomizar(this, 'allTablesName');" src="./assets/common/images/icons/dices.png" alt="" srcset="">
+        </section>
+        
+    </main>
+</div>
+
+
+<div id="overlay" onclick="closeMenu()"></div>
+
+<script src="./assets/common/js/main.js"></script>
+<script src="./assets/common/js/index.js"></script>
 </body>
 </html>
