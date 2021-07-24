@@ -37,8 +37,7 @@ Zumbie no armário na cozinha
 Zombies na casa queda de parede
 Zumbis caindo da um telhado ou lage
 Nada
-Zumbis presos em uma sala na casa,
-se alguém chegar perto da porta.
+Zumbis presos em uma sala na casa, se alguém chegar perto da porta.
 Jogar 1d6x2 zumbis presos ataca os PJs
 Zumbi escondido em baixo da cama.
 Zumbi no banheiro escuro quieto, só ataca se alguém ligar a luz.
