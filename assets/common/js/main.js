@@ -21,3 +21,14 @@ function toggleOverlay(close = true) {
         overlay.setAttribute('class', 'overlay');
     }
 }
+
+function randomizar(dice, tableName){
+
+    if(tables[tableName]){
+        randomNumber = Math.floor(Math.random() * (tables[tableName].length));
+        dice.parentElement.children[1].textContent = tables[tableName][randomNumber];
+    } else {
+        alert(`Essa tabela ainda não existe.`);
+    }
+    
+}

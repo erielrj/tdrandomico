@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/common/css/style.css">
+    <title>TD APP - ARMAS E OBJETOS</title>
+</head>
+<body>
+    
+<header>
+    <button onclick="openMenu()">&#9776</button>
+    <h1>ARMAS E OBJETOS</h1>
+</header>
+
+<div class="container">
+
+    <aside>
+        <a class="close" href="javascript:void(0);" onclick="closeMenu()">&times;</a>
+        <ul>
+            <li><a href="index.html">TABELAS GERAIS</a></li>
+            <li><a class="active" href="./armas-objetos.html">ARMAS E OBJETOS</a></li>
+            <li><a href="./inimigos.html">INIMIGOS</a></li>
+            <li><a href="./eventos.html">EVENTOS</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <section>
+            <h1>ARMAS BRANCAS</h1>
+            <p></p>
+            <img onclick="randomizar(this, 'coldWeapons');" src="./assets/common/images/icons/dices.png" alt="" srcset="">
+        </section>
+
+        <section>
+            <h1 style="font-size: 1.5rem;">ARMAS E EXPLOSIVOS</h1>
+            <p></p>
+            <img onclick="randomizar(this, 'weapons');" src="./assets/common/images/icons/dices.png" alt="" srcset="">
+        </section>
+        
+        <section>
+            <h1>COISAS ALEATÓRIAS</h1>
+            <p></p>
+            <img onclick="randomizar(this, 'randomStuff');" src="./assets/common/images/icons/dices.png" alt="" srcset="">
+        </section>
+        
+        <section>
+            <h1>COMIDA</h1>
+            <p></p>
+            <img onclick="randomizar(this, 'food');" src="./assets/common/images/icons/dices.png" alt="" srcset="">
+        </section>
+        
+        <section>
+            <h1>ELETRÔNICOS</h1>
+            <p></p>
+            <img onclick="randomizar(this, 'eletronics');" src="./assets/common/images/icons/dices.png" alt="" srcset="">
+        </section>
+
+        
+        <section>
+            <h1>ITENS DE CRAFT</h1>
+            <p></p>
+            <img onclick="randomizar(this, 'craft');" src="./assets/common/images/icons/dices.png" alt="" srcset="">
+        </section>
+
+        <section>
+            <h1>ITENS DE CURA</h1>
+            <p></p>
+            <img onclick="randomizar(this, 'health');" src="./assets/common/images/icons/dices.png" alt="" srcset="">
+        </section>
+        
+        <section>
+            <h1>QUÍMICOS</h1>
+            <p></p>
+            <img onclick="randomizar(this, 'chemicals');" src="./assets/common/images/icons/dices.png" alt="" srcset="">
+        </section>
+        
+        <section>
+            <h1 style="font-size: 1.5rem;">ROUPAS E ACESSÓRIOS</h1>
+            <p></p>
+            <img onclick="randomizar(this, 'clothes');" src="./assets/common/images/icons/dices.png" alt="" srcset="">
+        </section>
+        
+    </main>
+</div>
+
+
+<div id="overlay" onclick="closeMenu()"></div>
+
+<script src="./assets/common/js/armas-objetos.js"></script>
+<script src="./assets/common/js/main.js"></script>
+</body>
+</html>

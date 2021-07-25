@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/common/css/style.css">
-    <title>TD APP - TABELAS GERAIS</title>
+    <title>TD APP - INIMIGOS</title>
 </head>
 <body>
     
 <header>
     <button onclick="openMenu()">&#9776</button>
-    <h1>TABELAS GERAIS</h1>
+    <h1>INIMIGOS</h1>
 </header>
 
 <div class="container">
@@ -19,39 +19,33 @@
     <aside>
         <a class="close" href="javascript:void(0);" onclick="closeMenu()">&times;</a>
         <ul>
-            <li><a class="active" href="index.html">TABELAS GERAIS</a></li>
+            <li><a href="index.html">TABELAS GERAIS</a></li>
             <li><a href="./armas-objetos.html">ARMAS E OBJETOS</a></li>
-            <li><a href="./inimigos.html">INIMIGOS</a></li>
+            <li><a class="active" href="./inimigos.html">INIMIGOS</a></li>
             <li><a href="./eventos.html">EVENTOS</a></li>
         </ul>
     </aside>
 
     <main>
         <section>
-            <h1>TUDO</h1>
+            <h1>ELITES</h1>
             <p></p>
-            <img onclick="randomizar(this, 'everything');" src="./assets/common/images/icons/dices.png" alt="" srcset="">
-        </section>
+            <img onclick="randomizar(this, 'elites');" src="./assets/common/images/icons/dices.png" alt="" srcset="">
+        </section> 
 
         <section>
-            <h1>PESSOAS</h1>
+            <h1>EMBOSCADA</h1>
             <p></p>
-            <img onclick="randomizar(this, 'persons');" src="./assets/common/images/icons/dices.png" alt="" srcset="">
-        </section>
+            <img onclick="randomizar(this, 'ambush');" src="./assets/common/images/icons/dices.png" alt="" srcset="">
+        </section> 
 
-        <section>
-            <h1>PROFISSÕES</h1>
-            <p></p>
-            <img onclick="randomizar(this, 'professions');" src="./assets/common/images/icons/dices.png" alt="" srcset="">
-        </section>
-        
     </main>
 </div>
 
 
 <div id="overlay" onclick="closeMenu()"></div>
 
-<script src="./assets/common/js/index.js"></script>
+<script src="./assets/common/js/inimigos.js"></script>
 <script src="./assets/common/js/main.js"></script>
 </body>
 </html>

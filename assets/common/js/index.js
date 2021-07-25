@@ -1,5 +1,4 @@
-let allTablesResult = (`2 elites Re-role o Dado
-N.I
+let everything = (`N.I
 Caçador - Local com sangue e carne e ossos
 Comedora de miolos - casa com rastros de sangue e cabeças humanas em locais diversos espalhados na casa
 Nada
@@ -96,18 +95,11 @@ Munição ponto 50 1d6x2
 Sniper ponto 50
 Arcenal de armas e munições e explosivos 1 item de cada da lista`).split('\n');
 
-let allTablesName = ['Tabela de Elites', 'Tabela de Itens', 'Tabela de Armas'];
+let professions = ['Assassino de aluguel', 'Pedreiro', 'Traficante', 'Professor', 'Flanelinha', 'Advogado', 'Ex Militar', 'Jardineiro', 'Agente do Governo policial ou cargo de segurança', 'Cozinheiro', 'Cuidador de animais em zoológico', 'Agricultor', 'Agiota', 'Fazendeiro', 'Técnico de informatica', 'Caminhoneiro', 'Policial', 'Motoboy', 'Miliciano', 'Carpinteiro', 'Ladrão', 'Nutricionista', 'Quimico', 'Manicure', 'Vendedor', 'Padeiro', 'açougueiro', 'Padre', 'Fogueteiro', 'Pastor', 'Cientista', 'Massagista', 'Bombeiro', 'Medico', 'Enfermeiro', 'Musico' ]
+let persons = ['Homem idoso 60+', 'Mulher idosa 60+', 'Homem vivido 31-59 Anos', 'Mulher vivido 31-59 Anos', 'Homem de Meia idade 18-30 Anos', 'Mulher de Meia idade 18-30 Anos', 'Adolescente (Masculino) 14-17 Anos', 'Adolescente (Feminino) 14-17 Anos', 'Pre adolescente (Feminino) 2-14 Anos', 'Pre adolescente (Masculino) 12-14 Anos', 'Criança (Feminino) 0-12 Anos', 'Criança (Masculino) 0-12 Anos']
 
-
-const indexTables = {
-    allTablesResult,
-    allTablesName
-}
-
-
-function randomizar(dice, tableName){
-
-    randomNumber = Math.floor(Math.random() * (indexTables[tableName].length));
-    dice.parentElement.children[1].textContent = indexTables[tableName][randomNumber];
-
+const tables = {
+    everything,
+    professions,
+    persons
 }
